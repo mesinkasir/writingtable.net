@@ -23,13 +23,13 @@ export default function(eleventyConfig) {
     });
     eleventyConfig.setLibrary("md", mdLib);
 
-    eleventyConfig.addPlugin(pluginWebc, {
-        components: [
-            "_components/**/*.webc",
-            "npm:@11ty/is-land/*.webc",
-            "npm:@11ty/eleventy-img/*.webc"
-        ]
-    });
+eleventyConfig.addPlugin(pluginWebc, {
+    components: [
+        "_components/**/*.webc",
+        "npm:@11ty/is-land/*.webc",
+        "npm:@11ty/eleventy-img/*.webc"
+    ]
+});
 
     eleventyConfig.addPlugin(pluginRss);
     eleventyConfig.addPlugin(EleventyRenderPlugin);
