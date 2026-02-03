@@ -1,6 +1,7 @@
 nav:
  title: The Writing Table
- logo: https://placehold.co/60
+ #logo: https://placehold.co/60
+ logo: assets/img/cropped-ecr-square-rev1-150x150.png
  item: 
    - title: About
      url: "#hero"
