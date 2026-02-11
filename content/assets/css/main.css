@@ -86,14 +86,31 @@
         section {
             padding: 4rem 0;
         }
-        
-        /* Image Styles */
-        .section-image {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-            border-radius: 8px;
-        }
+.section-image-container,.help-image-container {
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.section-image,.help-image {
+    width: 100% !important;
+    max-width: 550px !important;
+    height: 550px !important; /* Kunci tinggi biar jadi kotak */
+    
+    /* Ini yang bikin dia kayak background */
+    object-fit: cover !important; 
+    object-position: center;
+    
+    border-radius: 10px;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .section-image {
+        height: auto !important;
+        aspect-ratio: 1 / 1;
+    }
+}
         
         .profile-image {
             width: 100%;

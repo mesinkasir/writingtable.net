@@ -1,17 +1,4 @@
 <style webc:scoped>
-    .section-image-container {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-    .section-image {
-        width: 100%;
-        max-width: 600px;
-        height: 400px;
-        object-fit: cover;
-        border-radius: 12px;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-    }
     .btn-dynamic {
         transition: opacity 0.3s ease;
         color: white !important;
@@ -30,13 +17,15 @@
         <div :class="`row align-items-center g-5 ${image_on_left ? '' : 'flex-row-reverse'}`">
             
             <div class="col-md-6">
+            <div class="section-image-container">
                 <div class="section-image-container">
                     <img :src="image" 
                          :alt="title"
-                         width="600" 
-                         height="500" 
-                         class="section-image"
+                         width="550" 
+                         height="550" 
+                         class="section-image img-fluid"
                          loading="lazy">
+                </div>
                 </div>
             </div>
             

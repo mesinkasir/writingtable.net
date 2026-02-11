@@ -35,9 +35,9 @@
                 <div class="help-image-container">
                     <img :src="image" 
                          :alt="title" 
-                         width="600" 
-                         height="500"
-                         class="help-image"
+                         width="550" 
+                         height="550"
+                         class="help-image img-fluid"
                          loading="lazy">
                 </div>
             </div>

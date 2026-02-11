@@ -7,14 +7,15 @@
         <div :class="`row align-items-center g-4 ${image_on_left ? '' : 'flex-row-reverse'}`">
             
             <div class="col-md-6">
+            <div class="section-image-container">
                 <img :src="image" 
                      :alt="title" 
                      class="section-image" 
                      fetchpriority="high"
-                     :style="`width: 100%; height: auto; border-radius: 8px; display: block;`"
-                     width="800"
-                     height="450"
+                     width="550"
+                     height="550"
                      decoding="async">
+            </div>
             </div>
             
             <div class="col-md-6 p-3">
